@@ -1,0 +1,17 @@
+<div class="container my-5">
+  <div class="row">
+    <div class="col">
+      <div class="row mb-1" *ngFor="let user of userList | async">
+        <div class="col">
+          <app-user-list-item
+            [user]="user"
+            (userSelected)="handleClick($event)"
+          ></app-user-list-item>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <app-user-details [user]="currentUser"></app-user-details>
+    </div>
+  </div>
+</div>

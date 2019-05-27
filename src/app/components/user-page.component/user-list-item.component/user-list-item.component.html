@@ -1,0 +1,16 @@
+<div class="card pointer">
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <img [src]="user.thumbnailUrl" class="card-img" />
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">{{ user.name }}</h5>
+        <h6 class="card-subtitle mb-2 text-muted">{{ user.username }}</h6>
+        <p class="card-text">
+          {{ user.email }}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
