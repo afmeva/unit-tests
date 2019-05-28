@@ -1,13 +1,18 @@
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import UserPageComponent from './user-page.component';
+import UserListComponent from './user-list.component/user-list.component';
+import UserCreateComponent from './user-create.component/user-create.component';
 
 @NgModule({
   imports: [
     RouterModule.forChild([
       {
         path: '',
-        component: UserPageComponent
+        component: UserListComponent
+      },
+      {
+        path: 'create',
+        component: UserCreateComponent
       }
     ])
   ],

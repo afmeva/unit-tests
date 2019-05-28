@@ -11,7 +11,40 @@
       </div>
     </div>
     <div class="col">
-      <app-user-details [user]="currentUser"></app-user-details>
+      <div class="row">
+        <div class="col mb-3">
+          <app-user-details [user]="currentUser"></app-user-details>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <a routerLink="create" class="link link-primary">
+            Create User
+          </a>
+        </div>
+      </div>
+      <div class="row mt-2">
+        <div class="col">
+          <button
+            type="button"
+            class="btn btn-primary"
+            (click)="handleRandomPick()"
+          >
+            Pick random user after 1 second
+          </button>
+        </div>
+      </div>
+      <div class="row mt-2">
+        <div class="col">
+          <button
+            type="button"
+            class="btn btn-primary"
+            (click)="handleRandomPickSetTimout()"
+          >
+            Pick random user after 1 second (setTimeout)
+          </button>
+        </div>
+      </div>
     </div>
   </div>
 </div>
